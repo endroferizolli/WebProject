@@ -1,0 +1,59 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color:lightslategrays;
+    margin: 6% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+  
+  .close {
+    color: lightslategray;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Remove pop up */
+  #remove-fullname {
+    color: red;
+  }
+  
+  button#cancel-btn {
+    background-color:lightslategray;
+    color: white;
+  }
+  
+  button#remove-btn {
+    background-color: #FF0000;
+    color: white;
+  }
+  
+  /* Error styles */
+  .error {
+    color: red;
+    font-size: 12px;
+  }

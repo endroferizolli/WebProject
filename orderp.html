@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+   
+
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <img src="assets/images/logotwilight.png" >
+        <ul>
+           <li><a href="indexp.html">Home</a></li> 
+           <li><a href="about.html">About</a></li>
+           <li><a href="orderp.html">Order</a></li>
+           <li><a href="review.html">Review</a></li>
+           <li><a href="orderss.html">Orders</a></li>
+        </ul>
+ </nav>
+ <h2>Order a book here</h2>
+ <div class="input_container">
+    <form name="formOrder" id="formOrder">
+        <div class="input-row">
+            <label for="fullName">Full name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+            <span id="fullnamespn"></span>
+        </div>
+        <div class="input-row">
+            <label for="Email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+            <span id="emailspn"></span>
+        </div>
+        <div class="input-row">
+            <label for="Phone No">Phone no</label>
+            <input type="text" id="phone" name="phone" placeholder="Phone no">
+            <span id="phonespn"></span>
+        </div>
+        <div class="input-row">
+            <label for="Book Title">Book Title</label>
+            <input type="text" id="book" name="book" placeholder="Book title">
+            <span id="bookspn"></spn>
+        </div>
+        <div class="input-row">
+            <label for="Description">Description of your order</label>
+            <textarea id="description" name="description"></textarea>
+            <span id="descriptionSpn"></span>
+        </div>
+        <div class="input-row"> 
+            <button id="submitBtn">Submit Order</button>
+        </div>
+    </form>
+ </div>
+ <div id="thankYouModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>Thank You!</h2>
+        <p>Thank you for your order! We appreciate it.</p>
+    </div>
+</div>
+<footer>
+    <span>&copy; <span id="currentYear"></span> Book Store. All rights reserved.</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="assets/js/scriptp.js"></script>
+
+</body>
+</html>
